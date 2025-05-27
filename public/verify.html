@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Verificador de Integridade</title>
+</head>
+<body>
+  <h1>Verificação de integridade de PDF com SHA-256</h1>
+  <form action="/verify" method="POST" enctype="multipart/form-data">
+    <input type="file" name="pdfFile" accept="application/pdf" required />
+    <button type="submit">Verificar Integridade</button>
+  </form>
+</body>
+</html>

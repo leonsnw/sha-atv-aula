@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Verificador de Hash SHA-256</title>
+</head>
+<body>
+  <h1>Envie um PDF para adicionar o hash SHA-256</h1>
+  <form action="/upload" method="POST" enctype="multipart/form-data">
+    <input type="file" name="pdfFile" accept="application/pdf" required />
+    <button type="submit">Enviar PDF</button>
+  </form>
+
+  <br />
+  <a href="/verificar">Ir para verificação de integridade</a>
+</body>
+</html>

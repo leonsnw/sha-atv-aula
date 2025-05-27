@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <title>Verificador de Integridade</title>
+  <meta charset="UTF-8">
+  <title>Verificar PDF com SHA-256</title>
 </head>
 <body>
-  <h1>Verificação de integridade de PDF com SHA-256</h1>
-  <form action="/verify" method="POST" enctype="multipart/form-data">
-    <input type="file" name="pdfFile" accept="application/pdf" required />
+  <h2>Verificação de Integridade do PDF</h2>
+  <form action="/verify" method="post" enctype="multipart/form-data">
+    <label for="pdfFile">Arquivo PDF:</label>
+    <input type="file" name="pdfFile" accept=".pdf" required><br><br>
+
+    <label for="hash">Hash SHA-256 da última página:</label><br>
+    <textarea name="hash" rows="4" cols="80" required placeholder="Cole aqui o hash que aparece na última página do PDF"></textarea><br><br>
+
     <button type="submit">Verificar Integridade</button>
   </form>
 </body>

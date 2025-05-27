@@ -1,13 +1,5 @@
-# Node modules
 node_modules/
-
-# Pastas de upload e geração de PDFs
 uploads/
 generated/
-
-# Logs
 *.log
-
-# Sistema operacional
-.DS_Store
-Thumbs.db
+.env
